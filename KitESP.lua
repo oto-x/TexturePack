@@ -17,12 +17,6 @@ local gui = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer.Pla
 gui.ResetOnSpawn = false
 espfold.Parent = gui
 
-local hidden = false
-
-local function isKeybindValid(key)
-    return Enum.KeyCode[key] ~= nil
-end
-
 local function showNotification(message)
     local notification = Instance.new("TextLabel")
     notification.Size = UDim2.new(0, 300, 0, 50)
